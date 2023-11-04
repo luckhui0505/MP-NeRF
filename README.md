@@ -3,10 +3,10 @@ MP-NeRF takes a unique approach by incorporating distinct priors tailored to dif
 
 ## Quick Start
 ### 1.Install environment
-'''
-cd MP-NeRF
-pip install -r requirements.txt
-'''
+
+'cd MP-NeRF'
+'pip install -r requirements.txt'
+
 ### 2. Download dataset
 There are total of 31 scenes used in the paper. We mainly focus on camera motion blur and defocus blur, so we use 5 synthetic scenes and 10 real world scenes for each blur type. We also include one case of object motion blur. You can download all the data in [here](https://hkustconnect-my.sharepoint.com/personal/lmaag_connect_ust_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Flmaag%5Fconnect%5Fust%5Fhk%2FDocuments%2Fshare%2FCVPR2022%2Fdeblurnerf%5Fdataset&ga=1).
 ### 3. Setting parameters
