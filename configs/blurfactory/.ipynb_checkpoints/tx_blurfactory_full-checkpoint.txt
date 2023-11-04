@@ -1,0 +1,45 @@
+num_gpu = 1
+expname = blurfactory1_full_wodepth_woprior_new13
+basedir = /root/Deblur-NeRF-master/weight
+datadir = /root/deblurnerf_dataset/synthetic_camera_motion_blur/blurfactory
+tbdir = /root/Deblur-NeRF-master/tensorboard
+dataset_type = llff
+
+factor = 1
+llffhold = 8
+
+N_rand = 512
+N_samples = 64
+N_importance = 64
+N_iters = 450000
+lrate = 5e-4
+lrate_decay = 250
+
+use_viewdirs = True
+raw_noise_std = 1e0
+rgb_activate = sigmoid
+
+kernel_start_iter = 1200
+# kernel_prior_weight = 0.1
+# prior_start_iter = 15000
+kernel_align_weight = 0.1
+align_start_iter = 0
+align_end_iter = 430000
+
+kernel_type = deformablesparsekernel
+kernel_ptnum = 5
+kernel_random_hwindow = 0.15
+kernel_random_mode = input
+
+kernel_img_embed = 32
+kernel_rand_embed = 2  # the in_embed
+kernel_spatial_embed = 2
+kernel_depth_embed = 0
+
+kernel_num_hidden = 4
+kernel_num_wide = 64
+kernel_shortcut
+
+kernel_spatialvariant_trans
+tone_mapping_type = gamma
+
